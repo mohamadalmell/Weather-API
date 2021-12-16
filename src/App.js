@@ -3,6 +3,7 @@ import Search from "./components/Search";
 
 import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
+import storm from "./img/weather-icons/mostlycloudy.svg"
 
 import "./App.css";
 
@@ -21,9 +22,12 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
+        <header>
+          <h1 className="">London</h1>
+          <button>FIND WEATHER</button>
+        </header>
+        <img src="{mostlycloudy}" alt="Mostly cloudy"/>
+
       </div>
     );
   }

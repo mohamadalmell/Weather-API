@@ -19,7 +19,11 @@
 /*  Search bar */
 
 /* Current weather */
+*{
+  margin: 0;
+  padding: 0;
+}
 
-div {
-  border: 5px solid red;
+body {
+  background-color: #9ccef4;
 }
